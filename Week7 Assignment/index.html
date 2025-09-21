@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week7 Assignment - CSS Transitions & JavaScript Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 CSS3 Transitions & JavaScript Functions</h1>
+        
+        <!-- PART 1: CSS Transitions and Animations -->
+        <h2>🎨 Part 1: CSS3 Transitions and Animations</h2>
+        <div class="demo-cards">
+            <div class="card hover-card">
+                <h3>Hover Effect</h3>
+                <p>Hover over me!</p>
+            </div>
+            <div class="card keyframe-card">
+                <h3>Keyframe Animation</h3>
+                <p>I'm pulsing!</p>
+            </div>
+            <div class="card transform-card">
+                <h3>Transform Effect</h3>
+                <p>Hover to rotate!</p>
+            </div>
+        </div>
+
+        <!-- PART 2: JavaScript Functions -->
+        <h2>📚 Part 2: JavaScript Functions</h2>
+        <div class="js-section">
+            <div class="button-group">
+                <button class="btn" onclick="testScope()">Variable Scope</button>
+                <button class="btn" onclick="testParameters()">Parameters</button>
+                <button class="btn" onclick="testReturnValues()">Return Values</button>
+                <button class="btn" onclick="clearOutput()">Clear</button>
+            </div>
+            <div class="output" id="jsOutput">Click buttons above to see JavaScript concepts!</div>
+        </div>
+
+        <!-- PART 3: JavaScript + CSS Animations -->
+        <h2>🎨🎬 Part 3: Interactive Animations</h2>
+        <div class="interactive-section">
+            <div class="button-group">
+                <button class="btn" onclick="animateBox()">Animate Box</button>
+                <button class="btn" onclick="resetBox()">Reset Box</button>
+                <button class="btn" onclick="flipCard()">Flip Card</button>
+                <button class="btn" onclick="showModal()">Show Modal</button>
+            </div>
+            
+            <div class="animated-box" id="animatedBox">📦 Box</div>
+            
+            <div class="flip-container">
+                <div class="flip-card" id="flipCard">
+                    <div class="flip-front">
+                        <div>Front Side<br>Click Flip Card!</div>
+                    </div>
+                    <div class="flip-back">
+                        <div>Back Side<br>JavaScript did this!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>🎉 Modal Window!</h3>
+            <p>This modal was triggered by JavaScript!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
